@@ -1,3 +1,14 @@
 url: "https://railscodealong.com" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 title: "Rails Code Along" # the name of your site, e.g. ACME Corp.
+collections:
+  lessons: 
+    output: true
+    sort_by: position
+defaults:
+  -
+    scope:
+      path: ""
+      type: "lessons"
+    values:
+      layout: "lesson"

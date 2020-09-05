@@ -1,0 +1,6 @@
+<h3 id="source_code">Source Code</h3>
+<ul>
+    {% for commit in page.commits %}
+      <li><a href="{{ commit }}" target="_blank">{{ commit }}</a></li>
+    {% endfor %}
+</ul>
