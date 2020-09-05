@@ -1,14 +1,24 @@
-<nav class="d-flex justify-content-between mb-3">
+<nav class="d-flex jflex-wrap justify-content-center mb-3">
     {% if page.previous != null %}
-    <a href="{{ page.previous.id }}" class="btn btn-sm btn-outline-danger" data-toggle="tooltip" data-placement="top" title="{{ page.previous.title }}">Previous Lesson</a>
+    <a href="{{ page.previous.id }}" class="btn btn-sm btn-outline-secondary" data-toggle="tooltip" data-placement="top" title="{{ page.previous.title }}">Previous Lesson</a>
     {% endif %}
     {% if page.previous == null %}
-    <span class="btn btn-sm btn-outline-danger disabled">Previous Lesson</span>
-    {% endif %}    
+    <span class="btn btn-sm btn-outline-secondary disabled">Previous Lesson</span>
+    {% endif %} 
+    <div class="dropdown mx-2">
+        <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" id="dropDownNavigation" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Navigate Between Lessons
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropDownNavigation">
+            {% for lesson in site.lessons %}
+            <a class="dropdown-item {% if page.id == lesson.id %} active {% endif %}" href="{{ lesson.id | relative_url }}">{{lesson.title}}</a>
+            {% endfor %}
+        </div>
+    </div>   
     {% if page.next != null %}
-    <a href="{{ page.next.id }}" class="btn btn-sm btn-outline-danger" data-toggle="tooltip" data-placement="top" title="{{ page.next.title }}">Next Lesson</a>
+    <a href="{{ page.next.id }}" class="btn btn-sm btn-outline-secondary" data-toggle="tooltip" data-placement="top" title="{{ page.next.title }}">Next Lesson</a>
     {% endif %}
     {% if page.next == null %}
-    <span class="btn btn-sm btn-outline-danger disabled">Next Lesson</span>
+    <span class="btn btn-sm btn-outline-secondary disabled">Next Lesson</span>
     {% endif %}    
 </nav>

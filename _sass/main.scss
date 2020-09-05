@@ -1,7 +1,9 @@
+$gray-200: #e9ecef;
+$red:#dc3545;
 $font-family-sans-serif: 'Montserrat', sans-serif;
 $headings-font-weight: 700;
-$gray-200: #e9ecef;
 $body-bg: $gray-200;
 $enable-responsive-font-sizes: true; 
+$dropdown-link-active-bg: $red;
 
 @import "./bootstrap/bootstrap.scss";
