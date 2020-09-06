@@ -1,6 +1,6 @@
 ---
 title: Add Bootstrap 4 to Rails 6
-video: https://www.youtube.com/embed/pmPpPiU3L2o
+video: https://www.youtube.com/embed/oWH6cyaWPsc
 position: 2
 commits:
     - https://github.com/stevepolitodesign/stridecatcher/pull/1/files
