@@ -1,6 +1,7 @@
-url: "https://railscodealong.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.railscodealong.com" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 title: "Rails Code Along" # the name of your site, e.g. ACME Corp.
+exclude: ["README.md", "Gemfile", "Gemfile.lock", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/"]
 collections:
   lessons: 
     output: true
