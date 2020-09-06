@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  {% include head.html %}
+  <body>
+    {% include navbar.html %}
+    {% include lesson_video.html %}
+    <div class="container">
+      <div class="card shadow-none rounded-0">
+        <div class="card-body">
+          {% include lesson_navigation.html %}
+          <hr/>
+          {% include lesson_title.html %}
+          {{ content}}
+          {% if page.commits %}
+          {% include lesson_commits.html %}
+          {% endif %}
+          {% if page.resources %}
+          {% include lesson_resources.html %}
+          {% endif %}
+        </div>
+      </div>
+    </div>
+    {% include scripts.html %}
+  </body>
+</html>
