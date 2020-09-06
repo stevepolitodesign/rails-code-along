@@ -1,6 +1,6 @@
 # Rails Code Along
 
-This free course will teach you how to build, test, troubleshoot and launch a REAL production Rails application.
+This course will teach you how to build, test, troubleshoot, and launch a REAL production Rails application.
 
 [Start Course](https://railscodealong.com/)
 
